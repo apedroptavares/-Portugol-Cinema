@@ -25,6 +25,10 @@ inteiro matriz[10][12]= {{0,0,0,0,0,0,0,0,0,0,0,0},
 
         criarTela()
 
+        escreva("\n")
+
+imprimir()
+
         reservaAssentos()
     }
 
@@ -49,6 +53,7 @@ inteiro matriz[10][12]= {{0,0,0,0,0,0,0,0,0,0,0,0},
         se(matriz[a][f] == 0){
             escreva("\nAssento disponível ! \n")
             matriz[a][f] = 1
+            limpa()
             inicio()
         }
         senao{
@@ -61,15 +66,28 @@ inteiro matriz[10][12]= {{0,0,0,0,0,0,0,0,0,0,0,0},
     funcao criarTela(){
         para(inteiro i=0; i < 90; i++){
             escreva("=")
+            
         }
     }
+
+
+funcao imprimir() {
+
+	para(a = 0; a < 10; a++){
+  	para(f = 0; f < 12; f++)
+    escreva(matriz[a][f], " ")
+  escreva("\n")
+}
+
+	
+}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1479; 
+ * @POSICAO-CURSOR = 701; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
